@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturedWork from './components/FeaturedWork';
 import Stats from './components/Stats';
@@ -9,12 +10,25 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <FeaturedWork />
-      <Stats />
-      <Services />
-      <Experience />
-      <Contact />
+      <Navbar />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="portfolio">
+        <FeaturedWork />
+      </section>
+      <section id="stats">
+        <Stats />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </div>
   );
